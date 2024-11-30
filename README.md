@@ -11,6 +11,10 @@ worst case:
 own_parser_parse_all: the value of closeTime   1732946532759       5.20ms
 gjson_parse_all: The value of closeTime        1732946532759       6.44ms
 ```
+P.S. My implementaion is not feature complete or comparable to gjson,
+just a impl. for a specialized use case.
+
+
 
 ## Requirements
 
