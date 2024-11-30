@@ -1,0 +1,12 @@
+[package]
+name = "test_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+minreq = { version = "2.12.0", features = ["https-native"] } 
+lazy_static = "1.5.0"
+gjson = "0.8.1"
+
+[features]
+debug = []

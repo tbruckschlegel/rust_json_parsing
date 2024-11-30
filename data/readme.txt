@@ -1,0 +1,1 @@
+Source: https://eapi.binance.com/eapi/v1/ticker
