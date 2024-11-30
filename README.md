@@ -1,6 +1,14 @@
 # Rust JSON parsing
 
 Simple high performance JSON parsing implementation that easily beats the fastest Property-parsing library gjson [https://github.com/AnnikaCodes/rust-json-parsing-benchmarks/tree/main].
+Results from a i7-12700 running Windows 11:
+```
+own_parser_parse_first: the value of closeTime   1732985135837     4.40µs
+gjson_parse_first: the value of closeTime        1732985135837    56.00µs
+
+own_parser_parse_all: the value of closeTime   1732946532759       5.20ms
+gjson_parse_all: The value of closeTime        1732946532759       6.44ms
+```
 
 ## Requirements
 
