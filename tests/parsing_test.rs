@@ -125,6 +125,7 @@ mod tests {
         let key_bytes = key_string.as_bytes();
         let mut position = 0;
         let mut item_index = 0;
+        let mut targte_index = 2;
         let mut result = Vec::new();
         now = Instant::now();
         loop {
@@ -132,9 +133,12 @@ mod tests {
                 Some(value) => {
                     result.push(value);
                     item_index=item_index+1;
-                    if item_index > 3 {
+                    /*
+                    // This optimization would speed up the item collection process, if not all items are needed
+                    if item_index > targte_index + 1 {
                         break;
                     }
+                    */
                 }
                 None => {
                     println!("Key '{}' not found", key);
